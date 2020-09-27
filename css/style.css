@@ -1,0 +1,289 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+body{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Titillium web","Helvetica Neue","Helvetica",Arial,sans-serif;
+    line-height: 1.4;
+    background-color: black;
+    color: #fff;
+    overflow-x: hidden;
+}
+header{
+    margin: 0 auto;
+    padding: 5px 2px;
+    top: 0;
+    position: sticky;
+    width: 70%;
+    border-radius: 50px;
+    background-color: rgba(57, 113, 158, 0.8);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.nav-links{
+    color: #fff;
+    text-decoration:none;
+    font-size: 18px;
+}
+.nav-links:hover{
+    text-decoration: underline;
+    text-decoration-color: #39719e;
+    text-transform: uppercase;
+}
+.active{
+    font-size: 20px;
+    text-decoration-color: #fff;
+    text-decoration: underline;
+}
+.main{
+    text-align: center;
+}
+.picture-div{
+    width: 100%;
+    max-width: 1920px;
+}
+
+#countdown-container{
+    text-align: center;
+    font-size:2em;
+}
+#countdown{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+}
+.btn-countdown{
+    background-color: #5ba6e4cb;
+    padding: 12px 14px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.btn-countdown a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+.gallery{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    
+}
+.gallery-img{
+    width: 450px;
+    height: 350px;
+    padding: 5px;
+}
+#gallery-heading{
+    text-align: center;
+}
+.wrapper{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+.contact-form{
+    background-color: rgba(57, 113, 158, 0.8);
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #fff;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    color: #fff;
+}
+.input-fields,
+.message{
+    width: 48%;
+    
+}
+.input-fields .input,
+.message textarea{
+    margin: 10px 0 ;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    
+}
+textarea{
+    height: 186px;
+}
+::placeholder{
+    font-size: 18px;
+    color: #fff;
+    font-family: "Titillium web","Helvetica Neue","Helvetica",Arial,sans-serif;
+
+}
+.btn{
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: green;
+}
+.events{
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0;
+    width: 75%;
+    text-align: center;
+}
+.event-container{
+    width:95%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 330px;
+    padding: 10px;
+    text-decoration: none;
+}
+.info-card{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding-bottom: 3px;
+}
+.event-title,
+.event-date,
+.event-description{
+    margin: 2px;
+    padding: 0 2px;
+    text-align: center;
+    color: black;
+   
+}
+
+
+@media screen and (max-width: 600px){
+    body{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        border-radius: 0px;
+        padding: 5px 0;
+    }
+    nav ul{
+        padding-inline-start: 0px;
+    }
+    .picture-div img{
+        width: 370px;
+    }
+    #countdown-container{
+        font-size: 1em;
+    }
+    #countdown{
+        font-size: 1.5em;
+    }
+    .btn-countdown{
+        width: 90%;
+        margin: 5px;
+    }
+    .btn-countdown a{
+        font-size: 1.5em;
+    }
+    .event-container{
+        width: 100%;
+    }
+    .card{
+        padding: 20px;
+    }
+    .events{
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+        align-content: center;
+    }
+    .gallery{
+        margin: 0 10px;
+    }
+    .gallery-img{
+        width: 350px;
+    }
+    .wrapper{
+        width: 95%;
+        padding: 0 10px;
+    }
+    .contact-form{
+        flex-direction: column;
+    }
+    .message{
+        width: 95%;
+    }
+    .message textarea{
+        height: 80px;
+    }
+    .input-fields,
+    .msg{
+        width:100%;
+    }
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+    body{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        border-radius: 0px;
+        padding: 5px 0;
+    }
+    .main{
+        margin-top: 15px;
+    }
+    .picture-div{
+        width: 100%;
+    }
+    .picture-div img{
+        width: 100%;
+    }
+    .events{
+        width: 100%;
+    }
+    .gallery{
+        width: 100%;
+    }
+    .gallery-card{
+        margin: 0 auto;
+        padding:0;
+        width: 350px;
+    }
+    .gallery-img{
+        width: 345px;
+    }
+    .wrapper{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+  }
